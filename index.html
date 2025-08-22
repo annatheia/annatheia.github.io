@@ -1,1 +1,19 @@
-<div> text </div>
+<style>
+  @keyframes inProgress {
+    0%    {up: -10px}
+    100%  {up: 10px}
+  }
+
+  wip {
+    position: relative;
+    text-align: center;
+
+    animation-name: inProgress;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+</style>
+
+<wip>In Progress!</wip>
